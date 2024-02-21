@@ -28,11 +28,11 @@ const SignUp = ({ setName }) => {
       if (user) {
         const username = user.displayName;
         setName(username);
-        navigate("/");
       }
     } catch (error) {
-      console.error("Error signing in:", error);
+      alert("Error signing in:", error);
     }
+    navigate("/");
   };
 
   const handleSignUp = async () => {
@@ -46,11 +46,11 @@ const SignUp = ({ setName }) => {
       if (user) {
         const username = user.displayName;
         setName(username);
-        navigate("/");
       }
     } catch (error) {
-      console.error("Error signing up:", error);
+      alert("Error signing up:", error);
     }
+    navigate("/");
   };
 
   const handleGoogleSignIn = async () => {
@@ -61,11 +61,11 @@ const SignUp = ({ setName }) => {
       if (user) {
         const username = user.displayName;
         setName(username);
-        navigate("/");
       }
     } catch (error) {
-      console.error("Error signing in with Google:", error);
+      alert("Error signing in with Google:", error);
     }
+    navigate("/");
   };
 
   return (
