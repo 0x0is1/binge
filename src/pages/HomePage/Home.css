@@ -1,0 +1,13 @@
+#main {
+  max-height: 91vh;
+  margin-top: 65px;
+  /* padding: 10px 20px; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#main::-webkit-scrollbar {
+  display: none;
+}
+#root {
+  background-color: var(--primary-background);
+}

@@ -1,0 +1,64 @@
+.auth-container {
+  max-width: 400px;
+  margin: auto auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.auth-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.auth-container p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.auth-container input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sign-in-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sign-up-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.google-sign-in-btn {
+  background-color: #db4437;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+}
