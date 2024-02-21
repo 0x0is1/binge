@@ -13,7 +13,7 @@ const Seriess = () => {
   });
   useEffect(() => {
     const fetchData = async () => {
-      const sdata = await fetcher.fetchSeriess(1);
+      const sdata = await fetcher.fetchSeries(1);
 
       setResponse({
         series: sdata,
