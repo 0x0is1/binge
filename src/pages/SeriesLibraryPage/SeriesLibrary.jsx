@@ -10,7 +10,7 @@ const SeriesLibrary = () => {
   
   const fetcher = new APIFetch();
   const [response, setResponse] = useState({
-    movies: [],
+    series: [],
   });
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const SeriesLibrary = () => {
     fetchData();
   }, []);
 
-  return response.series.length > 0 ? (
+  return response.series && response.series.length > 0 ? (
     <div id="main">
       <Category data={response.series} name="Series" type={"series"} />
     </div>
