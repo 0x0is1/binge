@@ -16,20 +16,20 @@ const SeriesLibrary = () => {
   useEffect(() => {
     const fetchData = async () => {
       const db = JSON.parse(localStorage.getItem("series")) || [];
-      const movieData = await Promise.all(
-        db.map((sid) => fetcher.fetchSeries(sid, 1))
+      const seriesData = await Promise.all(
+        db.map((sid) => fetcher.fetchSeriesById(sid, 1))
       );
       setResponse({
-        movies: movieData,
+        series: seriesData,
       });
     };
 
     fetchData();
   }, []);
 
-  return response.movies.length > 0 ? (
+  return response.series.length > 0 ? (
     <div id="main">
-      <Category data={response.movies} name="Movies" type={"movie"} />
+      <Category data={response.series} name="Series" type={"series"} />
     </div>
   ) : (
     <>
